@@ -37,6 +37,7 @@ ol {
 
 img {
     display: block;
+    max-width: 100%;
 }
 
 a {
@@ -46,9 +47,22 @@ a {
 /* common */
 
 .container {
-    max-width: 1158px;
-    padding: 0 15px;
+    max-width: 320px;
+    padding: 0 16px;
     margin: 0 auto;
+}
+@media screen and (min-width:768px) {
+    .container {
+            max-width: 768px;
+            padding: 0 16px;
+            margin: 0 auto;
+        }
+}
+@media screen and (min-width:1158px) {
+    .container {
+            max-width: 1158px;
+            padding: 0 15px;
+            margin: 0 auto;   }
 }
 
 /* header */
@@ -77,6 +91,7 @@ a {
     display: flex;
     align-items: center;
     gap: 40px;
+    display: none;
 }
 
 .contacts-list {
@@ -128,6 +143,7 @@ bottom:-1px;
 .contacts {
     font-style: normal;
     margin-left: auto;
+    display: none;
 }
 
 .contacts-link {
@@ -147,12 +163,16 @@ bottom:-1px;
     color: #404bbf;
 }
 
+@media screen and (min-width:768px) {}
+
+@media screen and (min-width:1158px) {}
+
 /* main */
 
 /* sect 1 */
 
 .title {
-padding: 188px 0;
+padding: 72px 0;
 background-color: #2e2f42;
 background-image:linear-gradient(to bottom,
     rgba(46, 47, 66, 0.7),
@@ -161,24 +181,24 @@ url(../images/people-office-1.jpg);
 background-repeat: no-repeat;
 background-size: cover;
 background-position:center;
-max-width:1440px;
+max-width: 100%;
     
 }
 .title-text {
-    max-width: 496px;
-    margin: 0 auto 48px auto;
+    max-width: 216px;
+    margin: 0 auto 72px auto;
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #fff;
+        font-size: 36px;
+        line-height: 1.11111;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #fff;
 }
 
 .title-button {
     display: block;
     min-width: 169px;
-    margin: 0 auto 48px auto;
+    margin: 0 auto;
     height: 56px;
     border: none;
     border-radius: 4px;
@@ -197,7 +217,22 @@ max-width:1440px;
     background-color: #404bbf;
 
 }
+@media screen and (min-width:768px) {
 
+}
+
+@media screen and (min-width:1158px) {
+.title {
+padding:188px 0;
+}
+
+.title-text{
+ font-size: 56px;
+ line-height: 1.07;
+max-width: 496px;
+margin: 0 auto 48px auto;
+}
+}
 /* sect 2 */
 
 .visually-hidden {
@@ -255,7 +290,9 @@ margin-bottom:8px;
     letter-spacing: 0.02em;
     color: #434455;
 }
+@media screen and (min-width:768px) {}
 
+@media screen and (min-width:1158px) {}
 /* sect 3 */
 
 .our-team {
@@ -339,7 +376,9 @@ fill: #f4f4fd;
     padding-top: 32px;
     padding-bottom: 32px;
 }
+@media screen and (min-width:768px) {}
 
+@media screen and (min-width:1158px) {}
 /* portfolio sect */
 
 .our-portfolio {
@@ -423,7 +462,9 @@ transform:translateY(0);
     letter-spacing: 0.02em;
     color: #434455;
 }
+@media screen and (min-width:768px) {}
 
+@media screen and (min-width:1158px) {}
 /* footer */
 
 .footer-desc {
@@ -543,7 +584,9 @@ border: 1px solid #fff;
   }
   
 
-  
+  @media screen and (min-width:768px) {}
+
+  @media screen and (min-width:1158px){}
   /*------ FORM---------- */
   .backdrop {
 position: fixed;
@@ -728,4 +771,7 @@ input[type="checkbox"]:checked + .form-label .checkbox {
 .modal .title-button {
 margin: 0 auto;
 }
+@media screen and (min-width:768px) {}
+
+@media screen and (min-width:1158px) {}
   /*------ END FORM---------- */
