@@ -190,7 +190,7 @@ background-repeat: no-repeat;
 background-size: cover;
 background-position:center;
 max-width: 100%;
-    
+margin: 0 auto;
 }
 .title-text {
     max-width: 216px;
