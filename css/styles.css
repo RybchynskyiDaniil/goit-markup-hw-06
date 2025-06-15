@@ -758,7 +758,43 @@ border: 1px solid #fff;
   
 
   @media screen and (min-width:768px) {
+    .page-footer{
+        padding: 96px 108px;
+    }
+    .container-footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        text-align: left;
+        align-items: baseline;
+        }
 
+        .footer-logo-wrapper{
+        align-items: start;
+        }
+        .logo{
+        padding: 0;
+        }
+        .footer-desc{
+            width: 264px;
+        }
+       .footer-social-wrapper{
+       align-items: start;
+       }
+       .footer-social-links{
+       align-items: start;
+       }
+    .form-item {   
+
+            }
+    .subscribe-form{
+     flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    }
+        .subscribe-input{
+            min-width: 264px;
+        }
   }
 
   @media screen and (min-width:1158px){
