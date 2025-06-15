@@ -494,8 +494,19 @@ fill: #f4f4fd;
     padding-bottom: 32px;
 }
 @media screen and (min-width:768px) {
-
+    .team-list {
+        display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 24px;
+            row-gap: 64px;
+            justify-content:center;
+        }
+    .team-item{
+      
+    }
 }
+
 
 
 @media screen and (min-width:1158px) {
@@ -509,7 +520,7 @@ fill: #f4f4fd;
 }
 
 
-/* portfolio sect */
+/*  ------------SECTION-FOUR----------- */
 
 .our-portfolio {
     padding-top: 96px;
@@ -593,17 +604,22 @@ transform:translateY(0);
     letter-spacing: 0.02em;
     color: #434455;
 }
-@media screen and (min-width:768px) {}
+@media screen and (min-width:768px) {
+    .portfolio-list {
+        display: flex;
+            flex-direction: row;
+            gap: 24px;
+            flex-wrap: wrap;
+            row-gap: 72px;
+     }
+     .portfolio-item{
+        width: calc((100% - 24px) / 2);
+     }
+
+}
 
 @media screen and (min-width:1158px) {
-    .portfolio-list {
-            display: flex;
-            flex-wrap: wrap;
-            column-gap: 24px;
-            row-gap: 48px;   }
- .portfolio-item {
- width: calc((100% - 48px) / 3);
-  }  
+    
   .portfolio-work{
     margin-bottom: 72px;
   }        
