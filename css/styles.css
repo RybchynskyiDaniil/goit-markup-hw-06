@@ -448,7 +448,7 @@ gap: 24px;
     letter-spacing: 0.02em;
     text-align: center;
     color: #434455;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .team-item {
@@ -500,9 +500,6 @@ fill: #f4f4fd;
             row-gap: 64px;
             justify-content:center;
         }
-    .team-item{
-      
-    }
 }
 
 
@@ -510,11 +507,24 @@ fill: #f4f4fd;
 @media screen and (min-width:1158px) {
     .team-list {
     display: flex;
-    gap: 24px;   }
+    flex-direction: row;
+    gap: 24px; 
+flex-wrap: nowrap;  }
 
     .our-team {
      padding: 120px 0;
      background-color: #f4f4fd;}
+
+     .team-list {
+     gap: 24px;   } 
+
+         .team-item {
+             flex-basis: calc((100% - 72px) / 4);
+             border-radius: 0px 0px 4px 4px;
+             width: 264px;
+             background-color: #ffffff;
+             box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);   }
+
 }
 
 
@@ -617,10 +627,26 @@ transform:translateY(0);
 }
 
 @media screen and (min-width:1158px) {
-    
-  .portfolio-work{
-    margin-bottom: 72px;
-  }        
+    .our-portfolio {
+        padding-top: 120px;
+        padding-bottom: 120px;  }
+        .portfolio-list {
+         display: flex;
+         flex-wrap: wrap;
+         column-gap: 24px;
+         row-gap: 48px;      }    
+   .portfolio-item {
+    width: calc((100% - 48px) / 3);
+   }
+   .portfolio-work {
+       font-weight: 500;
+       font-size: 20px;
+       line-height: 1.2;
+       letter-spacing: 0.02em;
+       color: #2e2f42;
+       margin-bottom: 8px;
+   }
+
 }
 /* footer */
 
@@ -796,28 +822,43 @@ border: 1px solid #fff;
   }
 
   @media screen and (min-width:1158px){
-    .container-footer {
-            display: flex;
-            align-items: baseline;       }
- .page-footer {
- padding: 100px 0;
+  .footer-desc{
+    max-width: 264px;
+    margin-bottom: 0;
   }  
-  .footer-logo-wrapper {
-
-  margin-right: 120px;   }
- .footer-social-wrapper {
-
-   margin-right: 80px;       } 
   .footer-logo {
-  display: inline-block;
-  }   
-  .footer-desc {
-      max-width: 264px;
+      display: inline-block;
   }
-  .subscribe-form {
-      gap: 24px;  
+  .page-footer {
+      padding: 100px 0; 
   }
+  .container-footer {
+    flex-wrap: nowrap;
+      align-items: baseline;
+    flex-wrap: nowrap;
+    gap: 0;
+   }
+
+  .footer-logo-wrapper {
+   margin-right: 120px;       }
+
+   .footer-social-wrapper {
+       margin-right: 80px;
+    margin-bottom: 0;   } 
+
+           .footer-social-links {
+              }
+
+
+   .subscribe-form {
+     gap: 24px;          }
+
+         .subscribe-input {
+             width: 264px;
+      }
+
   }
+
 
   /*------ FORM---------- */
   .backdrop {
