@@ -306,7 +306,8 @@ background-size: cover;
 background-position:center;
 max-width: 100%;
 margin: 0 auto;
-}
+text-align: center;
+ }
 .title-text {
     max-width: 216px;
     margin: 0 auto 72px auto;
