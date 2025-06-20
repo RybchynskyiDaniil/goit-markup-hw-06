@@ -300,7 +300,7 @@ background-color: #2e2f42;
 background-image:linear-gradient(to bottom,
     rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)),
-url(../images/people-office-1.jpg);
+url(../images/hero-background-mob.jpg);
 background-repeat: no-repeat;
 background-size: cover;
 background-position:center;
@@ -308,6 +308,14 @@ max-width: 100%;
 margin: 0 auto;
 text-align: center;
  }
+ @media screen and (min-resolution:192dpi) {
+     .title {
+         background-image: linear-gradient(to bottom,
+                 rgba(46, 47, 66, 0.7),
+                 rgba(46, 47, 66, 0.7)),
+             url(../images/hero-background-mob-2x.jpg);
+     }
+    }
 .title-text {
     max-width: 216px;
     margin: 0 auto 72px auto;
@@ -345,7 +353,20 @@ text-align: center;
 @media screen and (min-width:768px) {
 .title{
     padding: 112px 0;
+    background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/hero-background-tab.jpg);
 }
+}
+@media screen and (min-width:768px)and(min-resolution:192dpi) {
+    .title {
+        padding: 112px 0;
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/hero-background-tab-2x.jpg);   }
+
 .title-text{
     margin: 0 auto 36px auto;
         font-size: 56px;
@@ -362,7 +383,11 @@ text-align: center;
 @media screen and (min-width:1158px) {
     .title {
             padding: 188px 0;
-            max-width: 1440px;  }
+            max-width: 1440px;
+            background-image: linear-gradient(to bottom,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+             url(../images/people-office-1.jpg);  }
 .main-list {
     display: flex;
     align-items: flex-start;
@@ -377,6 +402,14 @@ text-align: center;
 }
 
 }
+@media screen and (min-width:1158px)and(min-resolution:192dpi) {
+    .title {
+        padding: 112px 0;
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/hero-background-desk-2x.jpg);
+    }}
 /* ---------SECTION TWO----------*/
 
 .visually-hidden {
